@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(43, 43, 43);
+}
+
+.card{
+    width: 90%;
+    max-width: 480px;
+    background: linear-gradient(140deg, #42c4b4, #5cbec2, #c8ce97);
+    border-radius: 20px;
+    margin: 100px auto 0;
+    padding: 40px;
+    box-shadow: 0 0 40px rgb(0, 0, 0);
+    color: white;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    height: 60px;
+    padding: 10px 25px;
+    color: black;
+    background: #e6dcff;
+    font-size: 18px;
+    flex: 1;
+    margin-right: 16px;
+    transition: 0.4s ease;
+}
+
+.search input:hover{
+    transform: scale(1.02);
+    background-color: rgb(252, 244, 255);
+    box-shadow: 0 0 10px #3e2c63de;
+}
+
+.search button{
+    height: 60px;
+    width: 60px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: #e3d8fd;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.search button img{
+    width: 20px;
+    transition: 0.4s ease-in-out;
+}
+
+.search button:hover{
+    background-color: rgb(252, 244, 255);
+    transform: scale(1.08);
+    box-shadow: 0 0 10px #3e2c63de;
+    img{
+        transform: rotate(90deg);
+    }
+}
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weather img{
+    mix-blend-mode: multiply;
+    filter: brightness(150%);
+    filter: contrast(150%);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.weather img:hover{
+    transform: scale(1.08);
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    justify-content: space-between;
+    margin-top: 50px ;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 75px;
+    height: auto;
+    padding-right: 10px;
+    filter: invert(50%);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.col img:hover{
+    filter: invert(0);
+}
+
+.humidity,
+.Wind{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    font-size: 20px;
+    font-weight: 400 ;
+    margin-top: 18px;
+    padding-left: 18px;
+    display: none;
+}
